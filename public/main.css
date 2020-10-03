@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+.form-container {
+  width: 60vw;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  color: #282828;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+.form {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+.input {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #282828;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #2b2a2a;
+}
+textarea {
+  padding: 10px;
+}
+.input:focus {
+  outline: none;
+}
+.label {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  transition: 0.3s ease;
+}
+#title {
+  height: 45px;
+  font-size: 22px;
+  padding: 0 10px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.input:focus ~ .label {
+  top: -20px;
+  font-size: 12px;
+}
+.file-label {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+select {
+  font-size: 16px;
+  width: 300px;
+  padding: 5px;
+}
+select:focus {
+  outline: none;
+}
+#featured-content {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.featured-container {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  height: 45px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: rgb(42, 42, 204);
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: rgb(59, 59, 228);
+}
+.message {
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+  visibility: hidden;
+  font-weight: bold;
+}
